@@ -3,6 +3,7 @@
 Toasty'nin atlantis sunucusunda kullandığı tüm botları burada paylaşıp egolarını kendilerine yedirme vol 1
 **Stat Botu**
 
+
 ![image](https://user-images.githubusercontent.com/77938499/121361655-2c1a2b80-c93e-11eb-8536-dac1b8979317.png)
 
 ![image](https://user-images.githubusercontent.com/77938499/121361700-376d5700-c93e-11eb-97b4-8e2020c81e41.png)
