@@ -1,2 +1,2 @@
-# Toast-Bots
+# Toasty-Bots
 Toasty bebesinin atlantis sunucusunda kullandığı tüm botları burada paylaşacağım. 
