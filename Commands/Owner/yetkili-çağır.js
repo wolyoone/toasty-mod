@@ -14,7 +14,7 @@ class YetkiliÇağır extends Command {
 
     async run(message, args, level) {
         if (!message.member.hasPermission("ADMINISTRATOR")) return
-        let enAltYetkiliRolü = message.guild.roles.cache.get(Permissions.Yetkili); // EN ALT YETKILI ROLUNUN IDSI BURAYA
+        let enAltYetkiliRolü = message.guild.roles.cache.get(Permissions.Yetkili);
         let yetkililer = message.guild.members.cache.filter(uye => !uye.user.bot && uye.roles.highest.position >= enAltYetkiliRolü.position && uye.presence.status !== "offline" && !uye.voice.channel).array();
         if (yetkililer.length == 0) return message.reply('Aktif olup, seste olmayan yetkili bulunmuyor. Maşallah!');
         let mesaj = await message.channel.send(`**${yetkililer.length}** yetkiliye sese gelme çağırısı yapılıyor`);
