@@ -1,0 +1,51 @@
+{
+    
+    "Family_Role": "",
+    "Booster_Role": "",
+     
+      
+   "Meeting": {
+    "Role": ""
+   },
+   
+   "Register": {
+    "Woman": ["",""],
+    "Man": ["", ""],
+    "Unregistered": [""]
+   },
+   
+   "Yasaklı_Tag": {
+    "Role": ""
+   },
+   
+   "Chat_Mute": {
+    "Role": ""
+   },
+   
+   
+   "Jail": {
+    "Role": "",
+    "Reklam": "",
+    "Karantina": ""
+    },
+   
+   "Suspect": {
+    "Role": ""
+   },
+   
+   "Month": {
+    "OneMonth": "",
+    "ThreeMonth": "",
+    "SixMonth": "",
+    "NineMonth": "",
+    "OneYear": ""
+   },
+   
+
+   "Warn": {
+    "Role": "",
+    "Role2": "",
+    "Role3": ""
+   }
+   }
+   

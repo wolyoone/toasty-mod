@@ -1,0 +1,94 @@
+{
+
+ "Auto_Tag_Log": "",
+ "General_Chat": "",
+ "Cezapuan_Log": "",
+ "Photo_Chat": "",
+ "Bot_Commands": "",
+ "Spotify_Chat": "",
+
+ "Zade": {
+    "Log": "",
+    "Nick": ""
+   },
+   
+"Register": {
+ "Log": ""
+},
+
+"Komut": {
+   "Log": ""
+},
+
+"Nick": {
+ "Log": ""
+},
+
+"Role": {
+ "Log": ""
+},
+   
+"Meeting": {
+ "Log": ""
+},
+
+"Ban": {
+ "Log": "",
+ "Unban": ""
+},
+
+"Kick": {
+ "Log": ""
+},
+
+"Chat_Mute": {
+ "Log": ""
+},
+
+"Voice_Mute": {
+ "Log": ""
+},
+
+"Jail": {
+ "Log": ""
+},
+
+"Suspect": {
+ "Log": ""
+},
+
+"Warn": {
+ "Log": ""
+},
+    
+"Transport": {
+ "Log": ""
+},
+
+"Başvuru": {
+   "Log": ""
+  },
+
+  "Başvuru_Kanal": {
+   "Log": ""
+  },
+  
+  "Ses": {
+   "Log": "",
+   "Mic": ""
+
+  },
+
+  "Message": {
+  "Update": "",
+  "Delete": ""
+
+  },
+
+"Terapi": {
+ "Onay": "",
+ "Log": "",
+ "Randevu": ""
+}
+
+}

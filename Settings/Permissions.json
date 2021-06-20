@@ -1,0 +1,47 @@
+
+{
+ "Commander": "",
+ "Ust_Yetkili": "",
+ "Yetkili": "",
+ "Sahip": "",
+ "Trident": "",
+ "TMazaretli": "",
+ "İzinli": "",
+
+
+"Ban": {
+  "Auth_Roles": "",
+  "GIF": ""
+},
+"Chat_Mute": {
+ "Auth_Roles": ["",""]
+
+},
+
+"Voice_Mute": {
+ "Auth_Roles": ["",""]
+
+},
+
+"Jail": {
+ "Auth_Roles": "" 
+
+},
+
+"Register": {
+ "Auth_Roles": ""
+},
+
+"Warn": {
+ "Auth_Roles": ""
+},
+
+"Transport": {
+ "Auth_Roles": ""
+},
+
+"Terapi": {
+ "Auth_Roles": ""
+}
+
+}

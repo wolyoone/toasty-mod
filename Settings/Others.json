@@ -1,0 +1,21 @@
+{
+ 
+"Colors":{
+ "positive":"228B22",
+ "negative":"FF0000",
+ "notr":"808080"
+},
+    
+"Emojis":{
+ "Off_Mic": "",
+
+ "Check_Tick": "",
+
+ "Red_Tick": "",
+
+ "dnd": "",
+ "online": "",
+ "offline": "",
+ "idle": ""
+}
+}
