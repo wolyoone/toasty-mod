@@ -1,6 +1,6 @@
 # Toasty-Bots Zadee#1915
 
-#**Stat Botu**
+** #Stat Botu**
 
 
 ![image](https://user-images.githubusercontent.com/77938499/121361655-2c1a2b80-c93e-11eb-8536-dac1b8979317.png)
