@@ -1,7 +1,6 @@
 # Toasty-Bots Zadee#1915
 
-Toasty'nin atlantis sunucusunda kullandığı tüm botları burada paylaşıp egolarını kendilerine yedirme vol 1
-**Stat Botu**
+#**Stat Botu**
 
 
 ![image](https://user-images.githubusercontent.com/77938499/121361655-2c1a2b80-c93e-11eb-8536-dac1b8979317.png)
@@ -14,7 +13,7 @@ Toasty'nin atlantis sunucusunda kullandığı tüm botları burada paylaşıp eg
 
 ![image](https://user-images.githubusercontent.com/77938499/121361541-0e4cc680-c93e-11eb-9b96-bdd065287221.png)
 
-**Moderasyon Botu**
+#**Moderasyon Botu**
 ![image](https://user-images.githubusercontent.com/77938499/121362767-06415680-c93f-11eb-9991-f9b86a72b3cc.png)
 
 ![image](https://user-images.githubusercontent.com/77938499/121363814-f118f780-c93f-11eb-9a92-3bb96c94d0e9.png)
@@ -31,12 +30,12 @@ Toasty'nin atlantis sunucusunda kullandığı tüm botları burada paylaşıp eg
 ![image](https://user-images.githubusercontent.com/77938499/121362334-b4003580-c93e-11eb-97a0-d551aa730d98.png)
 
 
-**Guard Botu**
+#**Guard Botu**
 ![image](https://user-images.githubusercontent.com/77938499/121354397-8368cd80-c937-11eb-987a-a601b260d023.png)
 
 ![image](https://user-images.githubusercontent.com/77938499/121354429-8b287200-c937-11eb-88df-521b8d744326.png)
 
-**İnvite Botu**
+#**İnvite Botu**
 ![image](https://user-images.githubusercontent.com/77938499/121364573-93d17600-c940-11eb-816b-86c7feba5f21.png)
 
 
