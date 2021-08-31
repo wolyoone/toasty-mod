@@ -35,7 +35,7 @@
 
 ![image](https://user-images.githubusercontent.com/77938499/121354429-8b287200-c937-11eb-88df-521b8d744326.png)
 
-# İnvite Botu
+# Invite Botu
 ![image](https://user-images.githubusercontent.com/77938499/121364573-93d17600-c940-11eb-816b-86c7feba5f21.png)
 
 
