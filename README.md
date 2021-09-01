@@ -1,4 +1,4 @@
-# Toasty-Bots Zadee#1915
+# Toasty-Bots 
 
 # Stat Botu
 
