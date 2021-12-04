@@ -44,7 +44,7 @@ class TopluBan extends Command {
         await prompt.edit(`${this.client.ok} ${members.length} adet kullanıcı başarıyla yasaklandı.`);
         for (const member of members) {
             if (member.bannable)
-                await member.ban({ days: 7, reason: "Toplu ban" });
+                await member.ban({ reason: "Toplu ban" });
         }
         collector.stop();
     });
