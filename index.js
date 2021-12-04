@@ -209,7 +209,7 @@ class ZadeBot extends Client {
       .replace(/@/g, "@" + String.fromCharCode(8203))
       .replace(
         this.token,
-        Bot.TOKEN
+        tokenxd
       );
 
     return text;
@@ -347,7 +347,7 @@ client.on("message", message => {
       })
 
 client.on('message', message =>{
-  let taglar = ['tag','TAG','Tag',,`!tag`,`!Tag`,`!TAG`,`.tag`,`.Tag`,`.TAG`]
+  let taglar = ['tag','TAG','Tag',`.tag`,`.Tag`,`.TAG`]
   if(message.author.bot) return
   if(taglar.some(r=>message.content.toLowerCase() ===r )){
     message.channel.send(`${Guild.Tag}`) 
@@ -365,7 +365,7 @@ client.on('message', message =>{
   });
 
 
-  client.login(Bot.TOKEN);
+  client.login(process.env.token);
   mongoose.connect(Bot.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(client.logger.log("Mongo Bağlantısı Kuruldu ✔", "log"));
 
