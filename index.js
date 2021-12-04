@@ -433,18 +433,4 @@ if(Date.now() - member.joinedAt > 1000 * 60 * 60 * 24 * 270) {await member.roles
       .setFooter(`Bugün saat ${deletedMessage.createdAt.getHours()}:${deletedMessage.createdAt.getMinutes()}`
       );
     sc.send(embed);
-      })
-
-      client.on("guildMemberNicknameUpdate", (member, oldNickname, newNickname) => {
-        if (member.user.bot) return;
-        let canbabe = member.guild.channels.cache.get(Log.Nick.Log)
-
-        let embedd = new Discord.MessageEmbed()
-        .setThumbnail(member.user.avatarURL())
-        .setAuthor(member.user.tag, member.user.avatarURL())
-        .setTimestamp()
-        .setColor("RANDOM")
-        .setDescription("<@"+member+"> " + oldNickname+"'s nickname is now " + `${newNickname ?? "Reset the username"}`)
-
-        canbabe.send(embedd)
       });
