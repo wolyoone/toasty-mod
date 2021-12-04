@@ -23,11 +23,11 @@ module.exports = class {
     if (Role.Register.Unregistered.some(e => üye.roles.cache.has(e)) || üye.roles.cache.has(cezalı) || üye.roles.cache.has(şüpheli)) return;
     if (!üye.roles.cache.has(ekip.id)) üye.roles.add(ekip.id).catch(console.error);
     if (log) log.send(`${üye} tagımızı aldı ve aramıza katıldı, hoşgeldin!`).catch(console.error);
-    üye.send(`Hey Selam! Tagımızı alıp ailemize katıldığın için sana Dynasty Rolünü verdim. Tekrardan ailemize hoş geldin!`).catch(e => {});
+    üye.send(`Hey Selam! Tagımızı alıp ailemize katıldığın için sana Family Rolünü verdim. Tekrardan ailemize hoş geldin!`).catch(e => {});
      üye.setNickname(üye.displayName.replace(ikinciTag, tag)).catch(console.error);
   } else if (eski.username.includes(tag) && !yeni.username.includes(tag)) {
     if (log) log.send(`${üye} tagımızı bıraktı, görüşürüz!`);
-    üye.send(`Hey Selam! Tagımızı çıkardığın için senden Dynasty Rolünü aldım. Tekrardan ailemize katılmak istersen tagımız. \`${Guild.Tag}\``).catch(e => {});
+    üye.send(`Hey Selam! Tagımızı çıkardığın için senden Family Rolünü aldım. Tekrardan ailemize katılmak istersen tagımız. \`${Guild.Tag}\``).catch(e => {});
     if (Limit.Tagli_Alim && !üye.premiumSince) await üye.roles.set(Role.Register.Unregistered);
      üye.setNickname(üye.displayName.replace(tag, ikinciTag)).catch(console.error);
     if (!Limit.Yetkili) {
