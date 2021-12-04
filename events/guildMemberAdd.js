@@ -14,11 +14,11 @@ module.exports = class {
     }
 
       async run(member) {
-        if (Date.now() - member.user.createdTimestamp < ms("5d")) {
+        if (Date.now() - member.user.createdTimestamp < ms("7d")) {
             this.client.channels.cache.get(Log.Suspect.Log).send(new Discord.MessageEmbed().setFooter(moment(Date.now()).format("LLL")).setColor("RANDOM").setDescription(`
 Şüpheli Kişi: ${member} - **${member.id}**
 
-Kişinin hesabı 5 günden önce açıldığı için Şüpheliye atıldı.
+Kişinin hesabı 7 günden önce açıldığı için Şüpheliye atıldı.
 `))
      member.roles.add(Role.Suspect.Role)
  
@@ -37,13 +37,13 @@ Kişinin hesabı 5 günden önce açıldığı için Şüpheliye atıldı.
                 setTimeout(() => {
                     member.roles.add(Role.Register.Unregistered)
                 }, 1500);
-              //  this.client.channels.cache.get(Log.Register.Log).send("🎉 Sunucumuza hoş geldin <@!" + member + "> !\n\nHesabın " + moment(member.user.createdTimestamp).format("LLL") + " tarihinde (" + moment(member.user.createdTimestamp).fromNow() + ") oluşturulmuş. " + emoji + "\n\nSunucu kurallarımız <#727881636296785981> kanalında belirtilmiştir. Unutma sunucu içerisinde ki ceza işlemlerin kuralları okuduğunu varsayarak gerçekleştirilecek.\n\nSeninle beraber " + member.guild.members.cache.size + " kişi olduk ! Tagımızı alarak bizlere destek olabilirsin ! Kayıt olmak için teyit odalarına girip ses teyit vermen gerekiyor yetkililerimiz seninle ilgilenecektir ! İyi eğlenceler.")
+                this.client.channels.cache.get(Log.Register.Log).send("🎉 Sunucumuza hoş geldin <@!" + member + "> !\n\nHesabın " + moment(member.user.createdTimestamp).format("LLL") + " tarihinde (" + moment(member.user.createdTimestamp).fromNow() + ") oluşturulmuş. " + emoji + "\n\nSunucu kurallarımız <#727881636296785981> kanalında belirtilmiştir. Unutma sunucu içerisinde ki ceza işlemlerin kuralları okuduğunu varsayarak gerçekleştirilecek.\n\nSeninle beraber " + member.guild.members.cache.size + " kişi olduk ! Tagımızı alarak bizlere destek olabilirsin ! Kayıt olmak için teyit odalarına girip ses teyit vermen gerekiyor yetkililerimiz seninle ilgilenecektir ! İyi eğlenceler.")
             } else if (res) {
                 if (res.ceza == false) {
                     setTimeout(() => {
                         member.roles.add(Role.Register.Unregistered)
                     }, 1500)
-                   // this.client.channels.cache.get(Log.Register.Log).send("🎉 Sunucumuza hoş geldin <@!" + member + "> !\n\nHesabın " + moment(member.user.createdTimestamp).format("LLL") + " tarihinde (" + moment(member.user.createdTimestamp).fromNow() + ") oluşturulmuş. " + emoji + "\n\nSunucu kurallarımız <#727881636296785981> kanalında belirtilmiştir. Unutma sunucu içerisinde ki ceza işlemlerin kuralları okuduğunu varsayarak gerçekleştirilecek.\n\nSeninle beraber " + member.guild.members.cache.size + " kişi olduk ! Tagımızı alarak bizlere destek olabilirsin ! Kayıt olmak için teyit odalarına girip ses teyit vermen gerekiyor yetkililerimiz seninle ilgilenecektir ! İyi eğlenceler.")
+                    this.client.channels.cache.get(Log.Register.Log).send("🎉 Sunucumuza hoş geldin <@!" + member + "> !\n\nHesabın " + moment(member.user.createdTimestamp).format("LLL") + " tarihinde (" + moment(member.user.createdTimestamp).fromNow() + ") oluşturulmuş. " + emoji + "\n\nSunucu kurallarımız <#727881636296785981> kanalında belirtilmiştir. Unutma sunucu içerisinde ki ceza işlemlerin kuralları okuduğunu varsayarak gerçekleştirilecek.\n\nSeninle beraber " + member.guild.members.cache.size + " kişi olduk ! Tagımızı alarak bizlere destek olabilirsin ! Kayıt olmak için teyit odalarına girip ses teyit vermen gerekiyor yetkililerimiz seninle ilgilenecektir ! İyi eğlenceler.")
                 } else if (res.ceza == true) {
                     await member.roles.add(Role.Jail.Role)
                   await member.roles.remove(Role.Register.Unregistered)
