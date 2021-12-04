@@ -99,9 +99,9 @@ rolü ve üstlerine ulaşabilirsiniz.
     .setFooter(`Üyenin ceza puanı `+puan+``)
     .setDescription(
 `${member.toString()} kişisinin adı başarıyla "${nick} | ${age}" olarak değiştirildi. Bu üye daha önce şu isimlerle kayıt olmuş:\n\n` +
-`${this.client.no} Kişinin Toplamda ${registerModel?.userNames?.length ?? 0} isim kayıtı bulundu.\n` +
- (registerModel?.userNames?.map(x => `\`• ${x.nick}\` (${x.type.replace(`Erkek`, `<@&${Role.Register.Man[0]}>`).replace(`Kız`, `<@&${Role.Register.Woman[0]}>`)})`).slice(0, 10).join("\n ") || "Daha önce kayıt olmamış.") + "\n\n" +
-`Kişinin önceki isimlerine \`!isimler @üye\` komutuyla bakarak kayıt işlemini gerçekleştirmeniz önerilir.` 
+`${this.client.no} Kişinin Toplamda ${registerModel.userNames.length || 0} isim kayıtı bulundu.\n` +
+ (registerModel.userNames.map(x => `\`• ${x.nick}\` (${x.type.replace(`Erkek`, `<@&${Role.Register.Man[0]}>`).replace(`Kız`, `<@&${Role.Register.Woman[0]}>`)})`).slice(0, 10).join("\n ") || "Daha önce kayıt olmamış.") + "\n\n" +
+`Kişinin önceki isimlerine \`.isimler @üye\` komutuyla bakarak kayıt işlemini gerçekleştirmeniz önerilir.` 
 );*/
 
 const embed = new MessageEmbed()
@@ -109,11 +109,11 @@ const embed = new MessageEmbed()
 .setColor("RANDOM")
 .setFooter(`Üyenin ceza puanı `+puan+``)
 .setDescription(`
-${registerModel?.userNames?.length ? `
-${member.toString()} üyesinin ismi başarıyla "${nick} | ${age}" ismine değiştirildi. Bu üye daha önce şu isimlerle kayıt olmuş:\n
-${this.client.no} Kişinin Toplamda ${registerModel?.userNames?.length ?? 0} isim kayıtı bulundu.
-${registerModel?.userNames?.map(x => `\`• ${x.nick}\` (${x.type.replace(`Erkek`, `<@&${Role.Register.Man[0]}>`).replace(`Kız`, `<@&${Role.Register.Woman[0]}>`)})`).slice(0, 10).join("\n ")}\n
-Kişinin önceki isimlerine \`!isimler @üye\` komutuyla bakarak kayıt işlemini gerçekleştirmeniz önerilir.` 
+${registerModel.userNames.length ? `
+${member.toString()} üyesinin ismi başarıyla "${nick} | ${age}" olarak değiştirildi. Bu üye daha önce şu isimlerle kayıt olmuş:\n
+${this.client.no} Kişinin Toplamda ${registerModel.userNames.length || 0} isim kayıtı bulundu.
+${registerModel.userNames.map(x => `\`• ${x.nick}\` (${x.type.replace(`Erkek`, `<@&${Role.Register.Man[0]}>`).replace(`Kız`, `<@&${Role.Register.Woman[0]}>`)})`).slice(0, 10).join("\n ")}\n
+Kişinin önceki isimlerine \`.isimler @üye\` komutuyla bakarak kayıt işlemini gerçekleştirmeniz önerilir.` 
 : `
 ${member.toString()} üyesinin ismi başarıyla "${nick} | ${age}" ismine değiştirildi.`}
 `);
@@ -192,7 +192,7 @@ ${member.toString()} üyesinin ismi başarıyla "${nick} | ${age}" ismine deği�
       .setDescription(`${member.toString()} üyesine ${Role.Register.Man.map(x => `<@&${x}>`)} rolleri verildi.`)
       .setFooter(`Üyenin ceza puanı `+puan+``);
     message.channel.send(embed)//.then(x => x.delete({timeout: 5000}))
-    this.client.channels.cache.get(Log.General_Chat).send(`Aramıza yeni biri katıldı! ${member.toString()} ona hoş geldin diyelim!`)
+    this.client.channels.cache.get(Log.General_Chat).send(`${member.toString()} aramıza katıldı!`)
  
     this.client.channels.cache.get(Log.Register.Log).send(new MessageEmbed()
     .setColor("RANDOM")
