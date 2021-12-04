@@ -60,7 +60,7 @@ class Cezalar extends Command {
 
             let out = table(dataxe, config)
             let outi = table(datax.slice(0, 15), config)
-            message.channel.send(`<@${user.id}> kullanıcısının toplam ${datax.length-1} cezası bulunmakta son 15 ceza aşağıda belirtilmiştir.Tüm ceza bilgi dosyasını indirmek için 🚫 emojisine, ceza sayılarına bakmak için ❔ emojisine basabilirsin.Tekli bir cezaya bakmak için \`!ihlal ID\` komutunu uygulayınız. \`\`\`${outi}\`\`\` `).then(msg => {
+            message.channel.send(`<@${user.id}> kullanıcısının toplam ${datax.length-1} cezası bulunmakta son 15 ceza aşağıda belirtilmiştir.Tüm ceza bilgi dosyasını indirmek için 🚫 emojisine, ceza sayılarına bakmak için ❔ emojisine basabilirsin.Tekli bir cezaya bakmak için \`.ihlal ID\` komutunu uygulayınız. \`\`\`${outi}\`\`\` `).then(msg => {
                 msg.react("🚫").then(async(r) => {
                     await msg.react('❔');
                 });
