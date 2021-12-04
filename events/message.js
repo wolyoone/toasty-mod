@@ -147,7 +147,7 @@ module.exports = class {
     if (message.guild && !message.channel.permissionsFor(message.guild.me).missing("SEND_MESSAGES"))
       return;
 
-    let prefikslerim = [".", "!","can"];
+    let prefikslerim = ["."];
     let zadecan = false;
     for (const içindeki of prefikslerim) {
       if (message.content.startsWith(içindeki)) zadecan = içindeki;
@@ -200,7 +200,7 @@ module.exports = class {
       this.client.commandBlock.set(message.author.id, blockArr)
 
       if (blockArr.length == 9) {
-        message.channel.send(`${message.author}` + "```⛔ Komut kullanımın kötüye kullandığın için engellendi.Açtırmak için " + this.client.appInfo.owner.tag + " kişisine ulaşman gerekiyor...```")
+        message.channel.send(`${message.author}` + "```⛔ Komut kullanımın kötüye kullandığın için engellendi.Açtırmak için Wolyo#4568 kişisine ulaşman gerekiyor...```")
         message.channel.send(`**${message.author.tag}** - ${message.author}(\`${message.author.id}\`) komut engeli yedi.Komut kullanım özeti:\n\`\`\`${blockArr.map(x => x.içerik).join("\n")}\nKullandığı komutlar: ${blockArr.map(x => x.komut).join(",")}\nKullandığı kanallar: ${blockArr.map(x => x.kanal).join(",")}\`\`\``)
         this.client.blockedFromCommand.push(message.author.id)
       }
