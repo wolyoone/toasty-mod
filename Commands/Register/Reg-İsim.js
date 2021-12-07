@@ -28,7 +28,7 @@ class İsim extends Command {
   const nick = args.slice(1).filter(arg => isNaN(arg)).map(arg => arg[0].toUpperCase() + arg.slice(1).toLowerCase()).join(" ");
   if (!nick) return this.client.yolla("Yeni ismi belirtin.", message.author, message.channel);
   if (nick && (await this.client.chatKoruma(nick))) return this.client.yolla('Üyenin kullanıcı ismine reklam veya küfür yazamazsınız lütfen geçerli bir isim girip yeniden deneyiniz.', message.author, message.channel)
-  const age = args.slice(1).filter(arg => !isNaN(arg))[0] ?? undefined;
+  const age = args[2];
   if (!age || isNaN(age)) return this.client.yolla("Geçerli bir yaş belirtin.", message.author, message.channel);
  if (message.guild.members.cache.has(member.id) && message.member.roles.highest.position <= message.guild.members.cache.get(member.id).roles.highest.position) return this.client.yolla("Kendi rolünden yüksek kişilere işlem uygulayamazsın!", message.author, message.channel)
   if(nick.length > 30) return client.reply(message, "isim ya da yaş ile birlikte toplam 30 karakteri geçecek bir isim giremezsin.")
